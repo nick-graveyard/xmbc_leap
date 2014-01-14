@@ -1,0 +1,7 @@
+import socket 
+
+
+s = socket.socket()
+host = socket.gethostname() #get localhost by default
+port = 1111
+s.connect((host,port))

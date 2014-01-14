@@ -1,0 +1,76 @@
+http://localhost:9090/jsonrpc?request={"jsonrpc":"2.0","id":1,"method":"Player.Open","params":{"playerid":0}   }
+
+
+
+
+http://<your-ip>:<your-port>/jsonrpc
+
+
+Open the player
+------
+http://localhost:8080/jsonrpc?request=
+{"jsonrpc": "2.0", "id": 1, "method": "Player.Open", 
+    "params": 
+    {
+    "item": 
+        {
+        "playlistid": 0,"position": 1
+        }
+   
+     }
+}
+
+
+
+Play/Pause
+-------
+{"jsonrpc": "2.0", "method": "Player.PlayPause", "params": { "playerid": 0 }, "id": 1}
+
+
+
+Fast Forward
+-------
+
+http://localhost:8080/jsonrpc?request={"jsonrpc":"2.0","id":1,"method":"Player.SetSpeed","params":{"playerid":0,"speed":2}}
+
+use negative values for speed
+
+
+Player.SetSpeed(playerid,value)
+
+
+Rewind
+--------
+
+http://localhost:8080/jsonrpc?request={"jsonrpc":"2.0","id":1,"method":"Player.SetSpeed","params":{"playerid":0,"speed":2}}
+
+use negative values for speed
+
+
+
+
+
+
+
+
+
+
+http://localhost:8080/jsonrpc?request={"jsonrpc": "2.0", "id": 1, "method": "Player.Open", "params": {"item": {"playerid":0 }}}
+
+
+
+
+
+http://localhost:8080/jsonrpc?request={"jsonrpc": "2.0", , "id": 1, "method": "Player.Open", "params": {  "Playlist.Id": "testPlaylist" }] }
+
+
+
+http://localhost:8080/jsonrpc?request={"jsonrpc": "2.0", , "id": 1, "method": "Player.Open", "params": { "playerid": 0 } }
+
+
+
+http://localhost:8080/jsonrpc?request={"jsonrpc": "2.0", , "id": 1, "method": "Player.Open", "params": [{ "type": 
+["additionalProperties":"testPlaylist" }] }
+
+
+"playerid":0

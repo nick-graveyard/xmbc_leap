@@ -1,0 +1,28 @@
+<window id="1234" type="dialog">
+
+
+    <coordinates>
+        <!--We've set this up to use relative coordinates, so that all control positions will be defined relative to the window's top left corner, which we've specified to be (200, 100).-->
+
+        <system>1</system>
+        <posX>200</posX>
+        <posY>100</posY>
+    </coordinates>
+
+    <controls>
+    <include>CommonBackground</include>
+
+    <control type="image">
+            <posx>0</posx>
+            <posy>90r</posy>
+            <width>1280</width>
+            <height>90</height>
+            <texture>floor.png</texture>
+            <animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
+            <animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+        </control>
+
+    </controls>
+
+
+</window>

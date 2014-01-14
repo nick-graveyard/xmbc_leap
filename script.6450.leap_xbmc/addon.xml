@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon id="script.6450.leap_xbmc" name="Leap Xbmc Addon" version="0.0.1" provider-name="Nick, Julie, John">
+
+<requires>
+    <import addon="xbmc.python"                 version="2.6.0"/>
+</requires>
+
+
+<extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+</extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">leap_xmbc Addon</summary>
+    <description lang="en">Leap_Xmbc Addon written for csci6450.</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991, free as in 'Murica.</license>
+    <disclaimer lang="en">This script may be offensive to aliens.</disclaimer>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+
+</addon>
